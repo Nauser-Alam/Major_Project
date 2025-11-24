@@ -1,0 +1,61 @@
+:root{
+  --bg:rgb(246, 248, 250); --card:#ffffff; --text:#0f1724; --muted:#6b7280; --accent:#2563eb; --danger:#ef4444;
+}
+[data-theme="dark"]{
+  --bg:#0b1220; --card:#0f1724; --text:#e6eef8; --muted:#94a3b8; --accent:#60a5fa; --danger:#fb7185;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:Inter,system-ui,Arial; background:var(--bg); color:var(--text);
+}
+.topbar{
+  height:64px; display:flex; align-items:center; justify-content:space-between; padding:0 20px;
+  background-color: rgba(246, 248, 255, 0.9); border-bottom:1px solid rgba(0,0,0,0.04); position: sticky; top:0; z-index:10;
+}
+.brand{font-weight:700}
+.btn{border:0; background:transparent; padding:8px 12px; cursor:pointer;border-radius:8px;}
+#startInterview.btn{background:var(--accent); color:white}
+.btn.small{padding:6px 8px}
+.btn.primary{background:var(--accent); color:white}
+.btn.danger{background:var(--danger); color:white}
+.container{padding:24px 36px; margin-left: 80px; margin-right: 80px;}
+.grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
+.card{background:var(--card); padding:18px; border-radius:12px; box-shadow: 0 6px 18px rgba(16,24,40,0.04);}
+.card h3{margin:0 0 10px 0}
+.grid-stack{display:grid; grid-template-columns:repeat(14,18px); gap:6px; padding:10px}
+.grid-stack > div{width:18px;height:18px;border-radius:4px;background:rgba(99,102,241,0.06)}
+.grid-stack > div.active{background:var(--accent)}
+.suggestion{white-space:pre-wrap; color:var(--muted); line-height:1.35}
+.hidden{display:none}
+.comm-layout{display:flex; gap:18px}
+.comm-left{flex:1}
+.comm-right{width:320px}
+.comm-top{position:relative; height:360px; background:#111}
+#camPreview{width:100%; height:100%; object-fit:cover; border-radius:8px}
+.cam-overlay{position:absolute; inset:0; display:flex; align-items:flex-end; justify-content:center; padding:16px; pointer-events:none}
+.cam-overlay .btn{pointer-events:auto}
+.transcript{margin-top:12px; padding:12px}
+.transcript-body{height:140px; overflow:auto; background:rgba(0,0,0,0.03); padding:8px; border-radius:6px}
+.card-inner{padding:12px; margin-top:8px; background:transparent}
+.modal{position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.35); z-index:40}
+.modal-content{width:420px; padding:18px}
+.modal-actions{display:flex; justify-content:flex-end; margin-top:12px}
+.toast{position:fixed; right:20px; bottom:20px; padding:10px 14px; border-radius:8px; background:#111; color:white}
+.small{font-size:0.9rem}
+.mt{margin-top:12px}
+.hidden {
+  display: none !important;
+}
+#pieChart {
+  display: block;
+  margin: 0 auto;
+  height: 300px !important;
+  width: 300px !important;
+}
+.welcome {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  font-weight: 500;
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CommuniCoach — UPSC-style communication trainer</title>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Icons (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">CommuniCoach</div>
+    <div class="welcome"></div>
+    <div class="right">
+      <button id="darkToggle" class="btn small">🌙</button>
+      <button id="navHome" class="btn small active">Home</button>
+      <button id="navComm" class="btn small">Communication</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Home -->
+    <section id="home" class="page">
+      <div class="grid">
+        <div class="card">
+          <h3>Performance (Last 30 days)</h3>
+          <canvas id="scoreChart" height="160"></canvas>
+        </div>
+
+        <!-- <div class="card">
+          <h3>Daily Stack</h3>
+          <div id="dailyStack" class="grid-stack"></div>
+        </div> -->
+
+
+        <div class="card">
+          <h3>Subject attempt breakdown</h3>
+          <canvas id="pieChart" width="300" height="300"></canvas>
+        </div>
+        <div class="card">
+          <h3>Suggestion Box</h3>
+          <div id="suggestionBox" class="suggestion"></div>
+        </div>
+        <div class="card">
+          <h3>Daily Stack</h3>
+          <div id="dailyStack" class="grid-stack"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Communication -->
+    <section id="comm" class="page hidden">
+      <div class="comm-layout">
+        <div class="comm-left card">
+          <div class="comm-top">
+            <video id="camPreview" autoplay playsinline></video>
+            <div class="cam-overlay">
+              <button id="startInterview" class="btn">Start Interview</button>
+              <button id="endInterview" class="btn danger hidden">End</button>
+            </div>
+          </div>
+          <div class="transcript card-inner">
+            <h4>Transcript</h4>
+            <div id="transcriptText" class="transcript-body"></div>
+          </div>
+        </div>
+
+        <aside class="comm-right card">
+          <h4>Session Controls & Feedback</h4>
+          <div>
+            <label for="topicSelect">Topic</label>
+            <select id="topicSelect">
+              <option value="general">General Conversation</option>
+              <option value="current-affairs">Current Affairs</option>
+              <option value="policy">Policy & Governance</option>
+              <option value="behavioural">Behavioral</option>
+            </select>
+          </div>
+
+          <div class="mt">
+            <label>Mic Mode</label>
+            <div>
+              <input type="radio" name="micMode" id="micAuto" value="auto" checked><label for="micAuto">Auto</label>
+              <input type="radio" name="micMode" id="micPush" value="push"><label for="micPush">Push-to-talk</label>
+            </div>
+          </div>
+
+          <div class="mt">
+            <h5>Feedback</h5>
+            <div id="feedbackBox" class="suggestion small"></div>
+          </div>
+
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Registration Modal -->
+  <div id="regModal" class="modal hidden">
+    <div class="modal-content card">
+      <h3>Register to continue</h3>
+      <p>We only ask for your name to create a profile and save your progress.</p>
+      <input id="regName" placeholder="Your full name" />
+      <div class="modal-actions">
+        <button id="regSubmit" class="btn primary">Register</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- App JS -->
+  <script src="app.js" defer></script>
+</body>
+</html>
