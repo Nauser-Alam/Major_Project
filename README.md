@@ -27,3 +27,12 @@
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/major-project.git
+
+---
+
+## Screenshots
+<img width="1895" height="897" alt="image" src="https://github.com/user-attachments/assets/2b342821-dbca-47b9-b723-69fff772502e" />
+<img width="1891" height="901" alt="image" src="https://github.com/user-attachments/assets/7a1b64a7-4884-4cb7-a24a-53f45c15deff" />
+
+
+   
