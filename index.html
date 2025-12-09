@@ -30,7 +30,7 @@
     <section id="home" class="page">
       <div class="grid">
         <div class="card">
-          <h3>Performance (Last 30 days)</h3>
+          <h3>Performance (Last 7 days)</h3>
           <canvas id="scoreChart" height="160"></canvas>
         </div>
 
@@ -62,7 +62,7 @@
           <div class="comm-top">
             <video id="camPreview" autoplay playsinline></video>
             <div class="cam-overlay">
-              <button id="startInterview" class="btn">Start Interview</button>
+              <button id="startInterview" class="btn">Start Communication</button>
               <button id="endInterview" class="btn danger hidden">End</button>
             </div>
           </div>
@@ -77,9 +77,12 @@
           <div>
             <label for="topicSelect">Topic</label>
             <select id="topicSelect">
-              <option value="general">General Conversation</option>
+              <option value="general">General Knowledge</option>
+              <option value="general talk">General Talk</option>
               <option value="current-affairs">Current Affairs</option>
               <option value="policy">Policy & Governance</option>
+              <option value="behavioural">International Relation</option>
+              <option value="policy">History, Art and Culture</option>
               <option value="behavioural">Behavioral</option>
             </select>
           </div>

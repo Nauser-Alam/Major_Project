@@ -59,3 +59,81 @@ body{
   font-size: 1rem;
   font-weight: 500;
 }
+/* Title */
+.comm-right.card h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #1a1a1a;
+}
+
+/* Field section spacing */
+.comm-right.card .field {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.comm-right.card label {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* Dropdown */
+.comm-right.card select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d3d3d3;
+  background: #fff;
+  font-size: 0.9rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.comm-right.card select:focus {
+  border-color: #4a90ff;
+  box-shadow: 0 0 0 3px rgba(74,144,255,0.15);
+  outline: none;
+}
+
+/* Mic Mode area */
+.comm-right.card .mic-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 6px;
+}
+
+.comm-right.card input[type="radio"] {
+  accent-color: #4a90ff;
+}
+
+.comm-right.card input[type="radio"] + label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Feedback title */
+.comm-right.card h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+/* Feedback box */
+#feedbackBox {
+  min-height: 60px;
+  background: #f7f9fc;
+  border: 1px solid #e3e9f2;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  padding: 12px;
+  color: #444;
+}

@@ -5,7 +5,7 @@
   e.g. const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfy.../exec'
 */
 const APPS_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbx2GdpckfJ6vdcGKZ60z4hwZ-kekTiuHfbOqNUBGpXNjN_hgd5L5N-4WcKjHA0VZP5TJg/exec";
+  "https://script.google.com/macros/s/AKfycbx0tPZkh76YEpoxvnmGKmr2LSB4JW4e4N1nixWKo4JSEe9wYiHizUidUhPs66biYSvFeQ/exec";
 
 let currentUser = null;
 const toast = id("toast");
@@ -379,7 +379,7 @@ async function startInterviewFlow() {
       video: false,
     });
     console.log("🎤 Microphone activated for answer capture.");
-    const userAnswer = await captureUserSpeechOnce(micStream, 5000, 15000);
+    const userAnswer = await captureUserSpeechOnce(micStream, 5000, 10000);
     console.log("User answer:", userAnswer);
     // Stop mic
     micStream.getTracks().forEach((t) => t.stop());
