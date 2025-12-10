@@ -200,11 +200,16 @@ async function initCharts() {
   pieChart = new Chart(pctx, {
     type: "doughnut", // change type to doughnut
     data: {
-      labels: ["History", "Geography", "Polity"],
+      labels: [
+        "Genral Talk",
+        "Technical Talk",
+        "Interview Skills",
+        "Current Affairs",
+      ],
       datasets: [
         {
-          data: [10, 12, 78],
-          backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+          data: [10, 12, 10, 8], // default data],
+          backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56", "#4BC0C0"],
           borderWidth: 1,
         },
       ],
