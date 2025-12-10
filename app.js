@@ -5,7 +5,7 @@
   e.g. const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfy.../exec'
 */
 const APPS_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbx0tPZkh76YEpoxvnmGKmr2LSB4JW4e4N1nixWKo4JSEe9wYiHizUidUhPs66biYSvFeQ/exec";
+  "https://script.google.com/macros/s/AKfycbwxpeBODWdqEuVYdEHlgF4XYBk9D39PTAwnRh4AkYcHU-cUY4Mxnc8uaWIzgvOvbV31gw/exec";
 
 let currentUser = null;
 const toast = id("toast");
